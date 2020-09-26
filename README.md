@@ -1,7 +1,8 @@
 # sunny70487_hw1_107751005
 ## Requirements
-
-install package(argparser) in R
+* windows or linux
+* R-studio
+* install package(argparser) in R-studio
 
 ## How to use on the command line
 
