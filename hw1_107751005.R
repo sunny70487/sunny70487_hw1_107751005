@@ -21,10 +21,10 @@ for(i in 1:n){
   names(mydata[[i]]) <- c("set","weight","height")
   write.csv(mydata[[i]],file=paste(dir_o,"output",i,".csv",sep=""),row.names=FALSE)}
 #run on the command line
-p <- arg_parser("Process input and output csv")
-p <- add_argument(p,"--input", help="read input csv file",default="input1")
-p <- add_argument(p,"--output", help="output result csv file",default="output1")
-args <- parse_args(p, commandArgs(trailingOnly = TRUE))
+parser <- arg_parser("Process input and output csv")
+parser <- add_argument(parser,"--input", help="read input csv file",default="input1")
+parser <- add_argument(parser,"--output", help="output result csv file",default="output1")
+args <- parse_args(parser, commandArgs(trailingOnly = TRUE))
 if (length(args)==0) {
   stop("USAGE: Rscript hw1_exam.R input", call.=FALSE)
 }
