@@ -1,4 +1,7 @@
-# sunny70487_hw1_107751005
+# hw1
+
+### Name: 林瀚陞
+### Student ID: 107751005
 ## Requirements
 * windows or linux
 * R-studio
