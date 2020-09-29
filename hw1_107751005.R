@@ -15,8 +15,8 @@ for(i in 1:n) {
 #data processing and output to csv 
 for(i in 1:n){
   s[[i]] <- paste("input",i,sep="")
-  r[[i]] <- max(round(data[[i]]$height))
-  h[[i]] <- max(round(data[[i]]$weight))
+  r[[i]] <- max(round(data[[i]]$height,2))
+  h[[i]] <- max(round(data[[i]]$weight,2))
   mydata[[i]] <- data.frame(s[[i]],h[[i]],r[[i]])
   names(mydata[[i]]) <- c("set","weight","height")
   write.csv(mydata[[i]],file=paste(dir_o,"output",i,".csv",sep=""),row.names=FALSE)}
